@@ -18,8 +18,10 @@ namespace TARgv24_C
             int a = 0;
             string tekst = "Python";
             char taht= 'A';
+            Console.WriteLine("Double arv: ");
             double arv = Convert.ToDouble(Console.ReadLine());
             //double.TryParse(Console.ReadLine(), out double arv)
+            Console.WriteLine("Float arv: ");
             float arv1 = (float)Convert.ToDecimal(Console.ReadLine());
             Console.Write("Mis on sinu nimi? ");
             tekst = Console.ReadLine();
@@ -35,7 +37,7 @@ namespace TARgv24_C
             Random rnd = new Random();
             a=rnd.Next(1,7);
             Console.WriteLine(a);
-            FunktsioonideClass.Nadala_paev(a);
+            tekst=FunktsioonideClass.Nadala_paev(a);
             Console.WriteLine(tekst);
             Console.ReadKey();
         }
