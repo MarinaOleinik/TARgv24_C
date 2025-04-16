@@ -7,7 +7,7 @@ using static System.Net.Mime.MediaTypeNames;
 
 namespace TARgv24_C
 {
-    internal class FunktsioonideClass
+    internal class FinktsioonideClass_1osa
     {
         public static float Kalkulaator(int arv1, int arv2)
         {
