@@ -41,19 +41,8 @@ namespace TARgv24_C
             }
 
             Console.WriteLine("-----for--List-------");
-            List<Isik> isikud2 = new List<Isik>();
-            for (int j = i-1; j > -1; j--)
-            {
-                Console.WriteLine(j);
-                Isik isik = new Isik
-                {
-                    Nimi = nimed[j],
-                    Vanus = 50,
-                    Isikukood = "111111111111",
-                    Aadress = aadressid[j]
-                };
-                isikud2.Add(isik);
-            }
+            List<Isik> isikud2 = FunktsioonideClass_2osa.Isikud2(nimed.Length, nimed, aadressid);
+
             foreach (Isik isik in isikud2)
             {
                 isik.PrindiInfo();

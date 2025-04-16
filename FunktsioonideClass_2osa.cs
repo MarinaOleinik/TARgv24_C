@@ -39,6 +39,24 @@ namespace TARgv24_C
             }
             return isikud;
         }
-            
+        public static List<Isik> Isikud2(int k, string[] nimed, string[] aadressid)
+        {
+            List<Isik> isikud2 = new List<Isik>();
+            for (int j = 0; j > k; j++)
+            {
+                Console.WriteLine(j);
+                Isik isik = new Isik
+                {
+                    Nimi = nimed[j],
+                    Vanus = 50,
+                    Isikukood = "111111111111",
+                    Aadress = aadressid[j]
+                };
+                isikud2.Add(isik);
+            }
+            return isikud2;
+        }
+
+
     }
 }
