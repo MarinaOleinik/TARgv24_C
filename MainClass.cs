@@ -11,6 +11,26 @@ namespace TARgv24_C
 
         public static void Main(string[] args)
         {
+            //III. osa Failid
+            FunktsioonideClass_3osa.Esimene_naide();
+            FunktsioonideClass_3osa.Teine_naide();
+            FunktsioonideClass_3osa.Kolmas_naide();
+            try
+            {
+                string path = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\..\..\Kuud.txt"); //@"..\..\..\Kuud.txt"
+                StreamWriter text = new StreamWriter(path, true); // true = lisa lõppu
+                Console.WriteLine("Sisesta mingi tekst: ");
+                string lause = Console.ReadLine();
+                text.WriteLine(lause);
+                text.Close();
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Mingi viga failiga");
+            }
+
+
+
             //II. osa Kordused, Massivid, Listid, Klassid
             List<string> sonad= FunktsioonideClass_2osa.Sõnad();
             
